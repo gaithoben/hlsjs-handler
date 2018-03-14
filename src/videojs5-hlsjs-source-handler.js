@@ -31,7 +31,6 @@ var attachVideojsStreamrootProvider = function(window, videojs, Hls) {
             'The video could not be loaded, either because the server or network failed or because the format is not supported';
           break;
       }
-
       console.error('MEDIA_ERROR: ', errorTxt);
     });
 
