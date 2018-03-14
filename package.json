@@ -3,10 +3,7 @@
   "version": "0.0.0-development",
   "description": "A package hlsjs handler",
   "main": "dist/index.umd.js",
-  "files": [
-    "dist",
-    "README.md"
-  ],
+  "files": ["dist", "README.md"],
   "scripts": {
     "commit": "git-cz",
     "test": "mocha src/index.test.js -w --compilers js:babel-register",
@@ -15,20 +12,15 @@
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
     "build:umd": "webpack --output-filename index.umd.js",
-    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/gaithoben/hlsjs-handler.git"
   },
-  "keywords": [
-    "hlsjs-handler",
-    "counties",
-    "constituencies",
-    "wards"
-  ],
-  "author": "Bernard Gaitho <gaithoben@gmail.com> (http://github.com/gaithoben)",
+  "keywords": ["hlsjs-handler", "counties", "constituencies", "wards"],
+  "author":
+    "Bernard Gaitho <gaithoben@gmail.com> (http://github.com/gaithoben)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gaithoben/hlsjs-handler/issues"
@@ -63,9 +55,6 @@
     }
   },
   "babel": {
-    "presets": [
-      "env",
-      "stage-2"
-    ]
+    "presets": ["env", "stage-2"]
   }
 }
