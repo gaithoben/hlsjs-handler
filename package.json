@@ -2,7 +2,7 @@
   "name": "hlsjs-handler",
   "version": "0.0.0-development",
   "description": "A package hlsjs handler",
-  "main": "dist/index.js",
+  "main": "dist/index.umd.js",
   "files": ["dist", "README.md"],
   "scripts": {
     "commit": "git-cz",
