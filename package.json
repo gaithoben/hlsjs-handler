@@ -2,7 +2,7 @@
   "name": "hlsjs-handler",
   "version": "0.0.0-development",
   "description": "A package hlsjs handler",
-  "main": "dist/index.umd.js",
+  "main": "dist/index.js",
   "files": ["dist", "README.md"],
   "scripts": {
     "commit": "git-cz",
@@ -12,6 +12,7 @@
     "build": "npm-run-all --parallel build:*",
     "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
     "build:umd": "webpack --output-filename index.umd.js",
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
     "semantic-release": "semantic-release"
   },
   "repository": {

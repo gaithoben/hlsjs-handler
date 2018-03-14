@@ -12,8 +12,16 @@ export default {
   devtool: 'source-map',
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel-loader', include },
-      { test: /\.json$/, loader: 'json-loader', include },
+      { test: /\.js$/, loader: 'babel-loader' },
+      { test: /\.css$/, loader: 'css-loader' },
+      {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.svg$/,
+        use: ['raw-loader'],
+      },
     ],
   },
 };
