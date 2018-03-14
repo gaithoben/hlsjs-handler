@@ -2,6 +2,10 @@
 
 A library containing hlsjs, videojs5-hlsjs-source-handler and videojs-quality-picker
 
+This Library has bollowed heavily from github.com/halibegic/videojs5-hlsjs-source-handler
+
+Thank you for all the effort of halibegic
+
 [![travis build](https://img.shields.io/travis/gaithoben/hlsjs-handler.svg?style=flat-square)](https://travis-ci.org/gaithoben/hlsjs-handler)
 [![version](https://img.shields.io/npm/v/hlsjs-handler.svg?style=flat-square)](http://npm.im/hlsjs-handler)
 [![downloads](https://img.shields.io/npm/dm/hlsjs-handler.svg?style=flat-square)](http://npm-stat.com/charts.html?package=hlsjs-handler&from=2015-08-01)
