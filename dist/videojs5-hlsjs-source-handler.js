@@ -1,6 +1,6 @@
 'use strict';
 
-require('videojs-quality-picker');
+var qualityPickerPlugin = require('ch-videojs-quality-picker');
 
 var attachVideojsStreamrootProvider = function attachVideojsStreamrootProvider(window, videojs, Hls) {
   function StreamrootProviderHLS(source, tech) {
@@ -10,6 +10,7 @@ var attachVideojsStreamrootProvider = function attachVideojsStreamrootProvider(w
     var _hls;
     var _errorCounts = {};
     var _duration = null;
+    var error;
 
     _video.addEventListener('error', function (evt) {
       var errorTxt,
@@ -30,6 +31,7 @@ var attachVideojsStreamrootProvider = function attachVideojsStreamrootProvider(w
           errorTxt = 'The video could not be loaded, either because the server or network failed or because the format is not supported';
           break;
       }
+
       console.error('MEDIA_ERROR: ', errorTxt);
     });
 

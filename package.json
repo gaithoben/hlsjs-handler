@@ -3,7 +3,10 @@
   "version": "0.0.0-development",
   "description": "A package hlsjs handler",
   "main": "dist/index.umd.js",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "commit": "git-cz",
     "test": "mocha src/index.test.js -w --compilers js:babel-register",
@@ -19,17 +22,21 @@
     "type": "git",
     "url": "https://github.com/gaithoben/hlsjs-handler.git"
   },
-  "keywords": ["hlsjs-handler", "counties", "constituencies", "wards"],
-  "author":
-    "Bernard Gaitho <gaithoben@gmail.com> (http://github.com/gaithoben)",
+  "keywords": [
+    "hlsjs-handler",
+    "counties",
+    "constituencies",
+    "wards"
+  ],
+  "author": "Bernard Gaitho <gaithoben@gmail.com> (http://github.com/gaithoben)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gaithoben/hlsjs-handler/issues"
   },
   "homepage": "https://github.com/gaithoben/hlsjs-handler#readme",
   "dependencies": {
-    "hls.js": "0.8.9",
-    "videojs-quality-picker": "^0.0.3"
+    "ch-videojs-quality-picker": "1.1.0",
+    "hls.js": "0.8.9"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -53,6 +60,9 @@
     }
   },
   "babel": {
-    "presets": ["env", "stage-2"]
+    "presets": [
+      "env",
+      "stage-2"
+    ]
   }
 }
